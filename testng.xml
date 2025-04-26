@@ -14,16 +14,26 @@
     <!-- test with package -->
     <test verbose="2" preserve-order="true" name="TestPackage">
         <packages>
-            <package name="testsForPackege"/>
+            <package name="org.example.testsForPackage"/>
         </packages>
     </test>
 
 <!--    test with group-->
-    <test verbose="2" preserve-order="true" name="TestPackage">
+    <test verbose="2" preserve-order="true" name="TestGroups">
         <groups>
             <run>
-                <include name="testgroup"></include>
+                <include name="testgroup"/>
             </run>
         </groups>
+        <classes>
+            <class name="org.example.testWithGroup.TestGroup"/>
+        </classes>
+    </test>
+<!--    test with parameter-->
+    <test verbose="2" preserve-order="true" name="TestParameter">
+        <parameter name="param" value="Dima testing"/>
+        <classes>
+            <class name="org.example.testWithParametrs.TestParamters"></class>
+        </classes>
     </test>
 </suite>
