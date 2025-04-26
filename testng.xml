@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+
+    <!-- test with classes -->
+    <test verbose="2" preserve-order="true" name="TestClasses">
+        <classes>
+            <class name="org.example.AppTest"/>
+            <class name="org.example.AppTest2"/>
+            <class name="org.example.AppTest3"/>
+        </classes>
+    </test>
+
+    <!-- test with package -->
+    <test verbose="2" preserve-order="true" name="TestPackage">
+        <packages>
+            <package name="testsForPackege"/>
+        </packages>
+    </test>
+
+<!--    test with group-->
+    <test verbose="2" preserve-order="true" name="TestPackage">
+        <groups>
+            <run>
+                <include name="testgroup"></include>
+            </run>
+        </groups>
+    </test>
+</suite>
