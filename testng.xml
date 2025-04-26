@@ -18,4 +18,12 @@
         </packages>
     </test>
 
+<!--    test with group-->
+    <test verbose="2" preserve-order="true" name="TestPackage">
+        <groups>
+            <run>
+                <include name="testgroup"></include>
+            </run>
+        </groups>
+    </test>
 </suite>
