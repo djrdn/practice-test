@@ -16,7 +16,7 @@ jobs:
     steps:
       # Крок 1: Завантаження коду з репозиторію
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/upload-artifact@v4
 
       # Крок 2: Встановлюємо Java (тут версія 17, можна змінити на свою)
       - name: Set up Java
